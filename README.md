@@ -31,5 +31,3 @@ This website showcases **sustainable sea cucumber farming**, its economic potent
 | Google Fonts        | Poppins (headings), Inter (body text)          |
 
 
-## ⚡ Project Structure
-
