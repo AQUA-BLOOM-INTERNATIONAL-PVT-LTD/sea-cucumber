@@ -1,28 +1,41 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Button } from "flowbite-react";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Gallery from "./pages/Gallery.jsx";
+import Contact from "./pages/Contact.jsx";
+
+import Footer from "./components/main/Footer.jsx";
+import NavBar from "./components/main/NavBar.jsx";
+import SideBar from "./components/main/SideBar.jsx";
 
 const App = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-blue-900 text-white gap-6 text-center">
-      
-      <h1 className="text-5xl" data-aos="fade-up">
-        Sustainable Sea Cucumber Farming 
-      </h1>
+    <div className="min-h-screen flex flex-col">
 
-      <p className="text-lg" data-aos="fade-up" data-aos-delay="200">
-        High export value and eco-friendly aquaculture solution.
-      </p>
+      <NavBar onMenuClick={() => setIsOpen(true)} />
+      <SideBar isOpen={isOpen} onClose={() => setIsOpen(false)} />
 
-      <Button color="dark" pill data-aos="fade-up" data-aos-delay="400">
-        Learn More
-      </Button>
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+
+      <Footer />
 
     </div>
   );
