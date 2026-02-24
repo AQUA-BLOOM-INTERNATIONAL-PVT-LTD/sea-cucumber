@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-b from-blue-50 via-white to-blue-100 pt-16 sm:pt-20 overflow-hidden pb-24 sm:pb-40 lg:pb-48">
+    <section className="relative bg-gradient-to-b from-blue-50 via-white to-blue-100 pt-16 sm:pt-20 overflow-hidden pb-24 sm:pb-40 lg:pb-52">
 
       {/* Floating bubbles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
@@ -19,11 +19,13 @@ const HeroSection = () => {
         <img src="/fish_2.png" className="fish fishC" alt="" />
         <img src="/crab.png" className="fish fishB" alt="" />
         <img src="/shrimp.png" className="fish fishD" alt="" />
+        <img src="/starFish.png" className="sea star1" alt="" />
+        <img src="/octobus.png" className="sea star2" alt="" />
       </div>
 
       {/* Main Content */}
-      <div className="relative z-20 max-w-7xl mx-auto pl-5 sm:pl-8 lg:pl-10">
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+        <div className="grid lg:grid-cols-2 gap-5 items-center">
 
           {/* TEXT */}
           <div className="text-center lg:text-left">
@@ -43,8 +45,8 @@ const HeroSection = () => {
             <Link
               to="/contact"
               className="inline-block bg-[#0A2365] text-white font-semibold 
-                px-5 py-2.5 sm:px-8 sm:py-3 rounded-lg
-                hover:bg-[#0A2365]/90 transition shadow-md"
+                px-2 py-2.5 sm:px-8 sm:py-3 rounded-lg
+                hover:bg-[#0A2365]/90 transition shadow-md text-xs sm:text-base"
             >
               Join with Us
             </Link>
@@ -52,12 +54,12 @@ const HeroSection = () => {
           </div>
 
           {/* IMAGE — HIDDEN ON MOBILE */}
-          <div className="hidden lg:flex justify-end">
-            <div className="w-full max-w-xl">
+          <div className="hidden md:flex justify-end lg:-mr-10">
+            <div className="w-full max-w-md lg:max-w-xl">
               <img
                 src="/home_image_1.png"
                 alt="Premium sea cucumbers"
-                className="w-full h-auto"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>

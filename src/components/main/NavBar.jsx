@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { HiMenu } from 'react-icons/hi'
 
 const NavBar = ({ onMenuClick }) => {
@@ -16,16 +16,37 @@ const NavBar = ({ onMenuClick }) => {
       <div className="flex items-center justify-between h-20">
 
         {/* Logo */}
-        <Link to="/">
+        <NavLink to="/">
           <img src="/logo.png" alt="Logo" className="w-16 h-16 sm:w-20 sm:h-20" />
-        </Link>
+        </NavLink>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map(({ to, label }) => (
-            <Link key={to} to={to} className="text-[#0A2365] hover:text-[#2774E1]">
-              {label}
-            </Link>
+            <NavLink
+              key={to}
+              to={to}
+              className={({ isActive }) =>
+                `flex items-center gap-2 font-medium transition ${
+                  isActive ? 'text-[#2774E1]' : 'text-[#0A2365]'
+                }`
+              }
+            >
+              {({ isActive }) => (
+                <>
+                  {/* Circle indicator */}
+                  <span
+                    className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                      isActive
+                        ? 'bg-[#2774E1] scale-110'
+                        : 'bg-slate-300'
+                    }`}
+                  ></span>
+
+                  {label}
+                </>
+              )}
+            </NavLink>
           ))}
         </div>
 

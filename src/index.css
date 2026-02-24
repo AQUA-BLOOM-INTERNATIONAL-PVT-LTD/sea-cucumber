@@ -38,7 +38,7 @@ body {
 
 .fish {
   position: absolute;
-  width: 60px;
+  width: clamp(40px, 6vw, 80px);
   opacity: 0.55;
   pointer-events: none;
 }
@@ -47,14 +47,14 @@ body {
 .fishA {
   top: 35%;
   left: -120px;
-  animation: swimRight 22s linear infinite;
-  width: 70px; 
+  animation: swimLeft 22s linear infinite;
+  width: clamp(50px, 7vw, 90px);
 }
 .fishB {
   top: 60%;
   left: -120px;
   animation: swimRight 28s linear infinite;
-  width: 50px; opacity: 0.4;
+  width: clamp(35px, 5vw, 70px); 
 }
 
 /* FROM RIGHT → LEFT */
@@ -62,14 +62,45 @@ body {
   top: 50%;
   right: 1000px; 
   animation: swimLeft 20s linear infinite;
-  width: 65px;
+  width: clamp(45px, 6vw, 85px);
 }
 
 .fishD {
   top: 70%;
   right: 1000px;
   animation: swimLeftSlow 28s linear infinite;
-  width: 55px;
+  width: clamp(40px, 5.5vw, 75px);
+}
+
+/* SEA BASE */
+.sea {
+  position: absolute;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* STARFISH FLOAT */
+.star1 {
+  top: 20%;
+  left: 10%;
+  width: clamp(30px, 4vw, 60px);
+  animation: swimLeft 20s linear infinite;
+}
+
+.star2 {
+  top: 65%;
+  left: 70%;
+  width: clamp(25px, 3vw, 50px);
+  animation: swimLeft 20s linear infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes floatSlow {
+  0%   { transform: translateY(0) rotate(0deg); }
+  25%  { transform: translateY(-12px) rotate(5deg); }
+  50%  { transform: translateY(8px) rotate(-4deg); }
+  75%  { transform: translateY(-6px) rotate(3deg); }
+  100% { transform: translateY(0) rotate(0deg); }
 }
 
 @keyframes swimRight {
