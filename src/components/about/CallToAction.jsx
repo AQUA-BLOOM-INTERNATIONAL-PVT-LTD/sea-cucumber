@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CallToAction = () => {
   return (
     <section className="relative bg-[#F5EBDD] py-10 rounded-3xl mx-4 sm:mx-6 md:mx-10 overflow-hidden shadow-md my-3">
@@ -36,12 +38,12 @@ const CallToAction = () => {
         </p>
 
         <div className="mt-5">
-          <a
-            href="/intro-seaCucumber"
+          <Link
+            to="/intro-seaCucumber"
             className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#2A1609] text-white text-xs sm:text-sm font-medium shadow hover:bg-[#3C2413] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2A1609]"
           >
             Explore More
-          </a>
+          </Link>
         </div>
       </div>
     </section>
