@@ -18,16 +18,16 @@ const WelcomeSection = () => {
           </div>
 
           {/* TEXT CONTENT */}
-          <div className="px-5 sm:px-8 lg:px-10 mt-5">
-            <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-[#2774E1] mb-3 text-center md:text-left">
+          <div className="mt-5 flex flex-col items-center lg:items-start px-5 sm:px-8 lg:px-10">
+            <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-[#2774E1] mb-3 text-center lg:text-left">
               About Us
             </p>
 
-            <h2 className="text-[#0A2365] font-bold text-2xl sm:text-3xl md:text-4xl leading-snug mb-4 text-center md:text-left">
+            <h2 className="text-[#0A2365] font-bold text-xl sm:text-2xl md:text-3xl leading-snug mb-4 text-center lg:text-left">
               Welcome to Aqua Bloom International Pvt Ltd
             </h2>
 
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-4 max-w-xl mx-auto lg:mx-0 text-justify">
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-4 max-w-2xl mx-auto lg:mx-0 text-justify">
               Aqua Bloom International Pvt Ltd is a trusted name in the
               processing and export of premium sea cucumber products. With a
               strong commitment to quality, sustainability, and customer
@@ -35,7 +35,7 @@ const WelcomeSection = () => {
               markets.
             </p>
 
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0 text-justify mb-8">
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto lg:mx-0 text-justify mb-4">
               Our company combines modern processing techniques with strict
               quality control standards to ensure that every product meets
               global export requirements. We strive to build long-term

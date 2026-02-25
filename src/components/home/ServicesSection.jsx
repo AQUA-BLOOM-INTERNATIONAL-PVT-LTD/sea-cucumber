@@ -8,12 +8,6 @@ const services = [
     image: "/SeaCucumber_Processing.jpeg",
   },
   {
-    title: "Export Services",
-    description:
-      "High-grade sea cucumber products exported to international markets with full compliance.",
-    image: "/Export Services.jpeg",
-  },
-  {
     title: "Local Market Supply",
     description:
       "Premium products supplied to trusted local buyers, retailers, and partners.",
@@ -25,6 +19,12 @@ const services = [
       "Strict quality checks at every stage from sourcing to packaging.",
     image: "/QualityAssurance.jpeg",
   },
+  {
+    title: "Export Services",
+    description:
+      "High-grade sea cucumber products exported to international markets with full compliance.",
+    image: "/Export Services.jpeg",
+  }
 ];
 
 const ServicesSection = () => {
@@ -35,7 +35,7 @@ const ServicesSection = () => {
         {/* Heading */}
         <div className="text-center mb-12">
           <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-[#2774E1] mb-2">
-            Our Products / Services
+            Our Services
           </p>
           <h2 className="text-[#0A2365] font-bold text-2xl sm:text-3xl md:text-4xl mb-3">
             What We Do

@@ -27,7 +27,7 @@ const Footer = () => {
 
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 rounded-lg bg-white text-black text-sm font-semibold shadow-md hover:bg-black/80 transition whitespace-nowrap"
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 rounded-lg bg-white text-black text-sm font-semibold shadow-md transition whitespace-nowrap"
           >
             Contact Us
           </Link>
