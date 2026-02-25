@@ -11,6 +11,7 @@ import Contact from "./pages/Contact.jsx";
 import Footer from "./components/main/Footer.jsx";
 import NavBar from "./components/main/NavBar.jsx";
 import SideBar from "./components/main/SideBar.jsx";
+import IntroPage from "./components/about/seaCucumber/IntroPage.jsx";
 
 const App = () => {
 
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/intro-seaCucumber" element={<IntroPage />} />
         </Routes>
       </main>
 

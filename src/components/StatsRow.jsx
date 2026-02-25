@@ -1,7 +1,7 @@
 
 const StatsRow = () => {
     return (
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 border-t border-slate-200 pt-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-slate-200 pt-5">
             {/* Clients */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="mb-3 flex items-center justify-center w-12 h-12 rounded-full bg-[#F3F7FF] text-[#E53E3E]">
