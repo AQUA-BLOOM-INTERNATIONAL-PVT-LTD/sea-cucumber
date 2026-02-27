@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
@@ -23,7 +24,15 @@ const App = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          style: {
+            background: "#0A2365",
+            color: "#fff",
+          },
+        }}
+      />
       <NavBar onMenuClick={() => setIsOpen(true)} />
       <SideBar isOpen={isOpen} onClose={() => setIsOpen(false)} />
 
