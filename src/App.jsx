@@ -3,7 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import ScrollToTop from "./components/ScrollToTop.jsx"; 
+import ScrollToTop from "./components/ScrollToTop.jsx";
+import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
 
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
@@ -48,6 +49,7 @@ const App = () => {
         </Routes>
       </main>
 
+      <ScrollToTopButton />
       <Footer />
 
     </div>
