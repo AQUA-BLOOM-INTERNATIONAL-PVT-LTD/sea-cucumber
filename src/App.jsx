@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import ScrollToTop from "./components/ScrollToTop.jsx"; 
 
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
@@ -37,6 +38,7 @@ const App = () => {
       <SideBar isOpen={isOpen} onClose={() => setIsOpen(false)} />
 
       <main className="flex-grow">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

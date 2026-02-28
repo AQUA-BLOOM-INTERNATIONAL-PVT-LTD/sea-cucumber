@@ -96,7 +96,14 @@ export default function Contact() {
             {/* Card 1 */}
             <div className="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-[#E1EDF5] p-6 flex flex-col gap-4 transition hover:-translate-y-2 duration-300">
               <div className="w-12 h-12 rounded-2xl bg-[#12A4C7]/10 flex items-center justify-center">
-                <MapPin className="w-6 h-6 text-[#12A4C7]" />
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Kaithady+Nunavil+Chavakacheri+Sri+Lanka"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-2xl bg-[#12A4C7]/10 flex items-center justify-center"
+                >
+                  <MapPin className="w-6 h-6 text-[#12A4C7] animate-floatX" />
+                </a>
               </div>
               <h3 className="text-sm font-semibold tracking-[0.18em] text-[#0A2365] uppercase">
                 Our Office
@@ -112,9 +119,12 @@ export default function Contact() {
 
             {/* Card 2 */}
             <div className="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-[#E1EDF5] p-6 flex flex-col gap-4 transition hover:-translate-y-2 duration-300">
-              <div className="w-12 h-12 rounded-2xl bg-[#12A4C7]/10 flex items-center justify-center">
-                <Mail className="w-6 h-6 text-[#12A4C7]" />
-              </div>
+              <a
+                href="mailto:aquabloom26@gmail.com?subject=Business Inquiry"
+                className="w-12 h-12 rounded-2xl bg-[#12A4C7]/10 flex items-center justify-center group"
+              >
+                <Mail className="w-6 h-6 text-[#12A4C7] animate-mailSend" />
+              </a>
               <h3 className="text-sm font-semibold tracking-[0.18em] text-[#0A2365] uppercase">
                 Email Us
               </h3>
@@ -129,9 +139,14 @@ export default function Contact() {
 
             {/* Card 3 */}
             <div className="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-[#E1EDF5] p-6 flex flex-col gap-4 transition hover:-translate-y-2 duration-300">
-              <div className="w-12 h-12 rounded-2xl bg-[#12A4C7]/10 flex items-center justify-center">
-                <Phone className="w-6 h-6 text-[#12A4C7]" />
-              </div>
+              <a
+                href="https://wa.me/94717683693"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-2xl bg-[#12A4C7]/10 flex items-center justify-center"
+              >
+                <Phone className="w-6 h-6 text-[#12A4C7] animate-ring" />
+              </a>
               <h3 className="text-sm font-semibold tracking-[0.18em] text-[#0A2365] uppercase">
                 Call Us
               </h3>
