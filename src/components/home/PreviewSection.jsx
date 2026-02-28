@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PreviewSection = () => {
     return (
@@ -34,8 +35,8 @@ const PreviewSection = () => {
                     industry.
                 </p>
 
-                <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-[#0A2365] text-white text-sm sm:text-base font-semibold shadow-md hover:bg-[#0A2365]/90 transition">
-                    Learn More About Us
+                <button  className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-[#0A2365] text-white text-sm sm:text-base font-semibold shadow-md hover:bg-[#0A2365]/90 transition">
+                    <Link to="/about">Learn More About Us</Link>
                 </button>
             </div>
 
