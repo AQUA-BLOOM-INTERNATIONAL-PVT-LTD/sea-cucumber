@@ -3,22 +3,22 @@ import { useState } from "react";
 const SeaCucumberProducts = () => {
   const products = [
     {
-      src: "/Sea_Cucumber_1.jpeg",
-      title: "Premium Dried",
-      subtitle: "Carefully processed",
-    },
-    {
-      src: "/Sea_Cucumber_2.png",
-      title: "Export Grade",
-      subtitle: "For global buyers",
-    },
-    {
-      src: "/Sea_Cucumber_3.png",
+      src: "/sea-cucumber/Specialty_Sizes.jpeg",
       title: "Specialty Sizes",
       subtitle: "Customized cuts",
     },
     {
+      src: "/sea-cucumber/Premium_Dried.jpeg",
+      title: "Premium Dried",
+      subtitle: "Carefully processed",
+    },
+    {
       src: "/Sea_Cucumber_4.jpeg",
+      title: "Export Grade",
+      subtitle: "For global buyers",
+    },
+    {
+      src: "/sea-cucumber/Global_Market.jpeg",
       title: "Global Market",
       subtitle: "Ready to ship",
     },
@@ -67,7 +67,7 @@ const SeaCucumberProducts = () => {
                     <img
                       src={item.src}
                       alt={item.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
 

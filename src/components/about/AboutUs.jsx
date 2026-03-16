@@ -10,7 +10,7 @@ const AboutUs = () => {
             {/* Header image */}
             <div className="w-full h-56 sm:h-72 md:h-80 overflow-hidden">
               <img
-                src="/factory.jpg"
+                src="/office/Office_1.JPG"
                 alt="Sea cucumber processing at Aqua Bloom"
                 className="w-full h-full object-cover"
               />
