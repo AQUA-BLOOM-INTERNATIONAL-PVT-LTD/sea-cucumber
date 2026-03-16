@@ -4,7 +4,7 @@ const ProcessingActivities = () => {
       title: "Receiving & Initial Grading",
       desc: "Fresh sea cucumbers arrive from trusted fishermen and are graded based on size, variety, and quality.",
       icon: "⚓",
-      image: "/boat_2.png",
+      image: "/processing/Receiving_SeaCucumber.jpeg",
     },
     {
       title: "Cleaning & Preparation",
@@ -16,7 +16,7 @@ const ProcessingActivities = () => {
       title: "Drying & Curing",
       desc: "Controlled drying methods help maintain structure, texture, and food safety while achieving ideal moisture levels.",
       icon: "☀️",
-      image: "/sea_wave_1.jpg",
+      image: "/sea-cucumber/Premium_Dried.jpeg",
     },
     {
       title: "Final Inspection & Packing",
@@ -53,7 +53,7 @@ const ProcessingActivities = () => {
                 <img
                   src={stage.image}
                   alt={stage.title}
-                  className="w-full h-full object-cover max-h-64 sm:max-h-full"
+                  className="w-full h-full object-cover max-h-64 "
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 <div className="absolute bottom-3 left-3 flex items-center gap-2 text-white text-sm font-semibold">

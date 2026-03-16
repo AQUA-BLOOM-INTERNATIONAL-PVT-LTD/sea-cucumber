@@ -3,19 +3,19 @@ import { useState } from "react";
 const FactoryAndFacility = () => {
   const images = [
     {
-      src: "/factory.jpg",
+      src: "/office/Office_1.JPG",
       alt: "Sea cucumber processing facility exterior",
     },
     {
-      src: "/SeaCucumber_Processing.jpeg",
+      src: "/office/Office_2.jpeg",
       alt: "Processing line with workers",
     },
     {
-      src: "/QualityAssurance.jpeg",
-      alt: "Quality assurance and hygiene checks",
+      src: "/office/Office_3.png",
+      alt: "Processing line with workers",
     },
     {
-      src: "/ISO 22000.jpeg",
+      src: "/office/Office_1.JPG",
       alt: "Food safety and quality certifications",
     },
   ];
